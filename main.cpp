@@ -1,3 +1,15 @@
 #include <iostream>
 
-int main() {}
+// using ull = unsigned long long;
+
+int **makeMtx(int rows, int cols);
+
+int main() {
+  int rows = 0, cols = 0;
+  std::cin >> rows >> cols;
+  if ((std::cin.fail())) {
+    return 1;
+  }
+  int **mtx = nullptr;
+  mtx = makeMtx(rows, cols);
+}
